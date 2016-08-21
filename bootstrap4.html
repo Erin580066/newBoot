@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style type="text/css">
+	.tips1{
+		width:20px;
+		height:200px;
+		background:#000;
+		right:0;
+	}
+	.tips2{
+		width:20px;
+		height:80px;
+		background:blue;
+		right:0;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+</head>
+<body style="height:2000px;">
+	<!--固定布局-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="tips1 affix visible-lg-block"></div>
+			<div class="tips2 affix hidden-lg"></div>
+		</div>
+	</div>
+	<!--固定布局-->
+	<div class="container">
+		<div class="row">
+			<!--打印的时候显示-->
+			<div class="visible-print-block">aaaaaaaa</div>
+			<!--打印的时候隐藏-->
+			<div class="hidden-print">bbbbbbbbb</div>
+			<!--字体图标-->
+			<div class="glyphicon glyphicon-search" style="font-size:40px; color:red"></div>
+		</div>
+	</div>
+	<!--预定义样式风格-->
+	<div class="container">
+		<br />
+		<input type="button" value="默认样式" />
+		<input type="button" value="首选项" class="btn btn-primary"/>
+		<input type="button" value="成功" class="btn btn-success"/>
+		<input type="button" value="一般信息" class="btn btn-info"/>
+		<input type="button" value="警告" class="btn btn-warning"/>
+		<input type="button" value="危险" class="btn btn-danger"/>
+		<br/><br/>
+		<p>默认样式</p>
+		<p class="bg-primary">首选项</p>
+		<p class="bg-success">成功</p>
+		<p class="bg-info">一般信息</p>
+		<p class="bg-warning">警告</p>
+		<p class="bg-danger">危险</p>
+		<br/>
+		<span>默认文字</span>
+		<span class="text-primary">首选项</span>
+		<span class="text-success">成功</span>
+		<span class="text-info">一般信息</span>
+		<span class="text-warning">警告</span>
+		<span class="text-danger">危险</span>
+		<br/>
+		<a href="#" class="btn btn-primary">链接1</a>
+		<a href="#" class="bg-success">链接3</a>
+		<a href="#" class="text-danger">链接3</a>
+		<br/><br/>
+		<div class="alert alert-warning">我是警告框</div>
+		<div class="alert alert-danger">我是危险框</div>
+		<br/><br/>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3>我是面板标题</h3>
+			</div>
+			<div class="panel-body">我是面板主体</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
