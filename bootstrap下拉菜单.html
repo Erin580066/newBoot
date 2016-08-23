@@ -137,7 +137,43 @@
 			</div>
 		</div>
 	</div>
+	
 </body>
 <script src="js/jquery-2.2.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+//		$('.dropdown-toggle').on('mouseover',function(){
+//			alert(1)
+//		})
+//		var timer = null;
+//		$('.dropdown-toggle').hover(function(){
+//			clearTimeout(timer);
+//			$('.dropdown').addClass('open');
+//		},function(){
+//			timer = setTimeout(function(){
+//				$('.dropdown').removeClass('open');
+//			},200)
+//		});
+//		$('.dropdown-menu').hover(function(){
+//			clearTimeout(timer);
+//		},function(){
+//			timer = setTimeout(function(){
+//				$('.dropdown').removeClass('open');
+//			},200)
+//		})
+//		$('.dropdown-toggle').dropdown();
+//		$('.dropdown-toggle').dropdown('toggle');
+//		$('.dropdown').on('show.bs.dropdown',function(){
+//			alert(1);
+//		})
+//		$('.dropdown').on('shown.bs.dropdown',function(){
+//			alert(1);
+//		})
+//		$('.dropdown').on('hide.bs.dropdown',function(){
+//			alert(1);
+//		})
+		$('.dropdown').on('hidden.bs.dropdown',function(){
+			alert(1);
+		})
+	</script>
 </html>
